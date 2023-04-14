@@ -6,7 +6,7 @@ con = psycopg2.connect(
     host='localhost',
     database='opdracht3_sp',
     user='postgres',
-    password='1824')
+    password='1234')
 
 con.autocommit = True
 cur = con.cursor()
