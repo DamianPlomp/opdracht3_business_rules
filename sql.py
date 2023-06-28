@@ -10,7 +10,7 @@ con = psycopg2.connect(
     host='localhost',
     database='opdracht3_sp',
     user='postgres',
-    password=os.getenv('PASSWORD')
+    password='1234'
 )
 
 con.autocommit = True
