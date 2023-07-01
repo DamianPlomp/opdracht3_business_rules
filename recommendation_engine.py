@@ -4,10 +4,10 @@ import random
 class RecommendationEngine:
     def __init__(self, host, database, user, password):
         self.connection = psycopg2.connect(
-            host='localhost',
-            database='opdracht3_sp',
-            user='postgres',
-            password='1234'
+            host=host,
+            database=database,
+            user=user,
+            password=password
         )
         self.connection.autocommit = True
         self.cursor = self.connection.cursor()
